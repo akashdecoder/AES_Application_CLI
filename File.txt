@@ -1,0 +1,5 @@
+Linker name for shared library is a symbolic link to the fully qualified soname which in turn is a symbolic link to the real name. Well, this command does exactly the same.
+
+When you run an ELF executable, by default the loader is run first. The loader itself is a shared object file /lib/ld-linux.so.X where ‘X’ is a version number. This loader in turn finds and loads all the shared libraries on which our program depends.
+
+All the directories that are searched by the loader in order to find the libraries is stored in /etc/ld.so.conf. Searching all the directories specified in /etc/ld.so.conf file can be time consuming so every time ldconfig command is run, it sets up the required symbolic links and then creates a cache in file /etc/ld.so.cache where all the information required for executable is written. Reading information from cache is very less time consuming. The catch here is that ldconfig command needs to be run every-time a shared library is added or removed. So on start-up the program uses /etc/ld.so.cache to load the libraries it requires.
