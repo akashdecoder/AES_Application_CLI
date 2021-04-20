@@ -10,7 +10,7 @@
 ## [Link: how to work with shared libraries in linux](https://www.geeksforgeeks.org/working-with-shared-libraries-set-2/)
 
 
-## [Block Cipher Modes Of Operation Presentation](https://www.slideshare.net/AkashRanjandas1/block-cipher-modes-of-operations)
+## [Block Cipher Modes Of Operation Presentation](https://siddagangainstitu-my.sharepoint.com/:p:/g/personal/1si18cs008_sit_ac_in/EXCowuytK3JJjVFY1iyWkSABQAX4D5eRreGl-9XWojYehQ?e=4bTqJx)
 
 ## To dynamically link and load the shared library
 
